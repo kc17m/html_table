@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table colspan-rowspan</title>
+    <style>
+        table {
+            margin-bottom: 50px;
+        }
+
+        table,
+        th,
+        table,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+        th {
+            background: grey;
+        }
+
+        th,
+        td {
+            width: 150px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>colspan/rowspan</h1>
+    </header>
+    <h2>Ergebnisvorschau 1</h2>
+    <table>
+        <tr>
+            <th rowspan="2">Name</th>
+            <th rowspan="2">ID</th>
+            <th colspan="2">Membership Dates</th>
+            <th rowspan="2">Balance</th>
+        </tr>
+        <tr>
+            <th>Joined</th>
+            <th>Canceled</th>
+        </tr>
+        <tr>
+            <th>Margaret Ngyen</th>
+            <td>42567</td>
+            <td>June 3, 2010</td>
+            <td>n/a</td>
+            <td>0.00</td>
+        </tr>
+        <tr>
+            <th>Edvard Galinsky</th>
+            <td>4555362</td>
+            <td>January 13, 2011</td>
+            <td>April 8, 2017</td>
+            <td>37.00</td>
+        </tr>
+        <tr>
+            <th>Hoshi Nakamura</th>
+            <td>6598742</td>
+            <td>Jukly 23, 2021</td>
+            <td>n/a</td>
+            <td>15.00</td>
+        </tr>
+    </table>
+    <br><br>
+    <h2>Ergebnisvorschau 2</h2>
+    <table>
+        <tr>
+            <th>comp</th>
+            <th>num</th>
+            <th>website</th>
+            <th>address</th>
+        </tr>
+        <tr>
+            <td rowspan="2">comp1</td>
+            <td>0123456789</td>
+            <td rowspan="2"><a href="#">website1.1</a><br><br>
+                <a href="#">website1.2</a>
+            </td>
+            <td rowspan="2">address1</td>
+        </tr>
+        <tr>
+            <td>0123456789</td>
+        </tr>
+        <tr>
+            <td>comp2</td>
+            <td>0123456789</td>
+            <td><a href="#">website2</a></td>
+            <td>address2</td>
+        </tr>
+    </table>
+    <br><br>
+    <h2>Ergebnisvorschau 3</h2>
+    <table>
+        <tr>
+            <th>User:</th>
+            <td colspan="3">user 1</td>
+            <td colspan="3">user 2</td>
+        </tr>
+        <tr>
+            <th>num:</th>
+            <td>0123456789</td>
+            <td>0123456789</td>
+            <td>0123456789</td>
+            <td>0123456789</td>
+            <td>0123456789</td>
+        </tr>
+    </table>
+
+    <br><br>
+    <h2>Ergebnisvorschau 4</h2>
+    <table>
+        <tr>
+            <th>User</th>
+            <th>num</th>
+        </tr>
+        <tr>
+            <td rowspan="3">user 1</td>
+            <td>0123456789</td>
+        </tr>
+        <tr>
+            <td>0123456789</td>
+        </tr>
+        <td>0123456789</td>
+        <tr>
+            <td rowspan="2">user 2</td>
+            <td>0123456789</td>
+        </tr>
+        <tr>
+            <td>0123456789</td>
+        </tr>
+        <tr>
+            <td rowspan="5">user 3</td>
+            <td>0123456789</td>
+
+        </tr>
+        <tr>
+            <td>0123456789</td>
+        </tr>
+        <tr>
+            <td>0123456789</td>
+        </tr>
+        <tr>
+            <td>0123456789</td>
+        </tr>
+        <tr>
+            <td>0123456789</td>
+        </tr>
+    </table>
+    <br><br>
+    <h2>Ergebnisvorschau 5</h2>
+    <table>
+        <tr>
+            <th>comp:</th>
+            <td>comp1</td>
+            <td colspan="2">comp2</td>
+            <td>comp3</td>
+            <td colspan="2">comp4</td>
+        </tr>
+        <tr>
+            <th>num:</th>
+            <td>0123456789</td>
+            <td>0123456789</td>
+            <td>0123456789</td>
+            <td>0123456789</td>
+            <td colspan="2">0123456789</td>
+        </tr>
+        <tr>
+            <th>Website</th>
+            <td>
+                <a href="#">website1</a>
+            </td>
+            <td colspan="2">
+                <a href="#">website2</a>
+            </td>
+            <td>
+                <a href="#">website3</a>
+            </td>
+            <td>
+                <a href="#">website4</a>
+            </td>
+            <td>
+                <a href="#">website5</a>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
